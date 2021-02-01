@@ -2,7 +2,7 @@ from psaw import PushshiftAPI
 
 api = PushshiftAPI()
 subred = 'checkmarx'
-qurey_term = 'lounge'
+query_term = 'lounge'
 gen = api.search_submissions(subreddit=subred, q=query_term)
 #results = list(gen)
 
