@@ -2,7 +2,7 @@ from psaw import PushshiftAPI
 from datetime import datetime, timedelta
 
 
-days_to_subtract = 1
+days_to_subtract = 10
 
 d = datetime.today() - timedelta(days=days_to_subtract)
 bf = int(d.timestamp())
