@@ -14,7 +14,7 @@ query_term = 'prisma'
 print('After date =',d,'   ',bf)
 
 # connect and query
-gen = api.search_submissions(subreddit=subred, q=query_term,filter=['full_link','author', 'title', 'subreddit'])
+gen = api.search_submissions(after= bf, subreddit=subred, q=query_term,filter=['full_link','author', 'title', 'subreddit'])
 #results = list(gen)
 
 for subm in gen:
