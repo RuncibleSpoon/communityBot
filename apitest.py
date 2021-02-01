@@ -1,7 +1,7 @@
 from psaw import PushshiftAPI
 
 api = PushshiftAPI()
-subred = checkmarx
+subred = 'checkmarx'
 
 gen = api.search_submissions(subreddit=subred, q='lounge')
 results = list(gen)
