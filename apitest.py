@@ -1,8 +1,8 @@
 from psaw import PushshiftAPI
 
 api = PushshiftAPI()
-subred = 'checkmarx'
-query_term = 'lounge'
+subred = 'paloaltonetworks'
+query_term = 'prisma'
 
 # connect and query
 gen = api.search_submissions(subreddit=subred, q=query_term)
