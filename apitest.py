@@ -11,7 +11,7 @@ subred = 'paloaltonetworks'
 query_term = 'prisma'
 
 # connect and query
-gen = api.search_submissions(after=d, subreddit=subred, q=query_term,filter=['url','author', 'title', 'subreddit'], )
+gen = api.search_submissions(subreddit=subred, q=query_term,filter=['url','author', 'title', 'subreddit'], )
 #results = list(gen)
 
 for subm in gen:
